@@ -1,7 +1,0 @@
-[submodule "moose"]
-	path = moose
-	url = https://github.com/idaholab/moose.git
-[submodule "iapws95"]
-        path = iapws95
-        url = git@github.inl.gov:ncrc/iapws95.git
-        update = none
