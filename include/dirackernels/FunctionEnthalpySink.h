@@ -9,11 +9,11 @@
 
 #pragma once
 
-#include "DiracKernel.h"
+// #include "FunctionDiracKernel.h"
 #include "PorousFlowPolyLineSink.h"
 
 class SinglePhaseFluidProperties;
-
+class Function;
 /**
  * Point source (or sink) that adds (removes) fluid at a mass flux rate specified by a postprocessor
  */
@@ -29,8 +29,8 @@ public:
 protected:
   /// Pressure
   const VariableValue & _pressure;
-  /// The function defining inlet temperature
-  const Function & _temperature_function;
+   /// The function being used for evaluation
+  const Function & _func;
   /// Fluid properties UserObject
   const SinglePhaseFluidProperties & _fp;
 };
